@@ -1,0 +1,225 @@
+<html>
+  <head>
+    <title>Google MDL Navigation Layout : Fixed header </title>
+    <!-- Material Design Lite -->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+   <link rel="stylesheet" 
+    href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-purple.min.css" /> 
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+  </head>
+  <body  background="bookstorelogo200.jpg">
+     <!-- MDL navigation container -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    
+    
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+
+      <!-- Spacer, to align items to right -->
+      
+   </nav>
+      <a class="mdl-navigation__link" href="1.html">VT Bookstore</a>
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-layout-spacer"></div>
+     
+       <div ><a href ="1.html" id = "Home" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-button--fab mdl-button--colored">
+        <i class="material-icons">home</i></a></div>
+         <div ><a href ="1.html" id = "Home" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-button--fab mdl-button--colored">
+        <i class="material-icons">help</i></a></div>
+  
+     
+      </nav>
+    </div>
+    <!-- Tabs -->
+         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Women</a>
+            <a href="#scroll-tab-2" class="mdl-layout__tab">Men</a>
+            <a href="#scroll-tab-3" class="mdl-layout__tab">Children</a> 
+            <a href="#scroll-tab-4" class="mdl-layout__tab">Accessories</a>      
+         </div>
+  </header>
+    
+    <!-- Drawer container -->
+  <div class="mdl-layout__drawer">
+  
+    <!-- navigation Container, with links -->
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Home Screen</a>
+      <a class="mdl-navigation__link" href="">Help</a>
+      <a class="mdl-navigation__link" href="">About us</a>
+   
+    </nav>
+  </div>
+    
+    
+  <main class="mdl-layout__content">
+ <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+            <div class="page-content"></div>
+            <table id="tableId" style="margin-top:130px; margin-left:50px;">  
+   <tbody>
+      <tr>
+      <td >Junior's Maroon Long Sleeve Pocket T-shirt</td> <td></td><td></td>
+      </tr>
+      <tr>
+      <td> <img src = "l1.png" id ="image" STYLE="position:absolute; TOP:260px; LEFT:50px; WIDTH:300px; HEIGHT:250px"></td>
+      <td>
+      <form>
+ 
+      <label class="mdl-selectfield__label" for="Size" id ="selector">Size</label>
+      <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label" id >
+        <select class="mdl-selectfield__select" id="Size" name="size">
+          <option value=""></option>
+          <option value="option1">S</option>
+          <option value="option2">M</option>
+          <option value="option3">L</option>
+        </select>
+      </div>
+    </form>
+    <form>
+ 
+      <label class="mdl-selectfield__label" for="Quantity" id ="selector">Quantity</label>
+      <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label" id >
+        <select class="mdl-selectfield__select" id="quantity" name="quantity">
+          <option value=""></option>
+          <option value="option1">1</option>
+          <option value="option2">2</option>
+          <option value="option3">3</option>
+          <option value="option3">4</option>
+          <option value="option3">5</option>
+          <option value="option3">6</option>
+          <option value="option3">7</option>
+          <option value="option3">8</option>
+          <option value="option3">9</option>
+          <option value="option3">10</option>
+        </select>
+      </div>
+    </form>
+    <br>
+    <label class="mdl-selectfield__label" for="Size">Location: First Floor <br> Aisle 7 <br> Third Shelf  <br> Price 44$ <br> </label><br>
+      <button onclick="buy()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">  Buy Now 
+       
+      </td>
+      <td  >
+      <br>  <br>   <br>  <br>  <br>   <br>  <br>  <br> <br>  <br> <br> <br>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+  <i class="material-icons">add_shopping_cart</i>Add to shopping cart
+</button>
+      
+      </td>
+       </tr>
+		
+      </tbody>
+   </table>
+ </section>
+         <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+            <div class="page-content"></div>
+            <table style="margin-top:130px; margin-left:250px;">  
+   <tbody>
+
+      
+        <tr>
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">T-Shirts</a></td>
+        <td></td><td></td><td></td> <td></td><td></td><td></td>
+        <td><a href="" target="_blank"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Shorts & Pants</a></td>
+
+        </tr>
+        <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr><tr>  </tr>  <tr>  </tr>  <tr>  </tr>
+        <tr>
+         <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Jerseys</a></td>
+         <td></td><td></td><td></td> <td></td><td></td><td></td>
+         <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Business Casual</a></td>
+      </tr>
+      <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr><tr>  </tr>  <tr>  </tr>  <tr>  </tr>
+     
+       
+       <tr> 
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Outwear & Knits</a></td>
+        <td></td><td></td><td></td> <td></td><td></td><td></td>
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Sweatshirts</a></td>
+       </tr>
+        <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr><tr>  </tr>  <tr>  </tr>  <tr>  </tr>
+       <tr> 
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Caps</a></td>
+        <td></td><td></td><td></td> <td></td><td></td><td></td>
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Performance</a></td>
+       </tr>
+		
+      </tbody>
+   </table>
+         </section>
+         <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+            <div class="page-content"></div>
+            <table style="margin-top:130px; margin-left:350px;">  
+   <tbody>
+
+      
+        <tr>
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Infant & Toddler</a></td
+        </tr>
+        
+        <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr><tr>  </tr>  <tr>  </tr>  <tr>  </tr>
+        
+        <tr>
+         <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Youth</a></td>
+        </tr>
+      
+      <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr><tr>  </tr>  <tr>  </tr>  <tr>  </tr>
+     
+       
+       <tr> 
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Jerseys & Cheer sets</a></td>
+       </tr>
+       
+		
+      </tbody>
+   </table>
+         </section>
+         <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+            <div class="page-content"></div>
+            <table style="margin-top:130px; margin-left:250px;">  
+   <tbody>
+
+      
+        <tr>
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Ties & Belts</a></td>
+        <td></td><td></td><td></td> <td></td><td></td><td></td>
+        <td><a href="" target="_blank"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Bags & Backpacks</a></td>
+
+        </tr>
+        <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr><tr>  </tr>  <tr>  </tr>  <tr>  </tr>
+        <tr>
+         <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Hair  Accessories</a></td>
+         <td></td><td></td><td></td> <td></td><td></td><td></td>
+         <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Footwear & Socks</a></td>
+      </tr>
+      <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr><tr>  </tr>  <tr>  </tr>  <tr>  </tr>
+     
+       
+       <tr> 
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Jewelry & Watches</a></td>
+        <td></td><td></td><td></td> <td></td><td></td><td></td>
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Cold Weather Gear</a></td>
+       </tr>
+        
+		
+      </tbody>
+   </table>
+         </section>
+<br><br><br><br><br><br><br>
+<div class="mdl-mega-footer__bottom-section">
+  <div><a href="5.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+<i class="material-icons">navigate_before</i>Back</a>
+</a> </div> 
+         
+               
+ </div>
+    
+  </main>
+    
+<script src="script.js"></script>
+
+</body>
+</html>

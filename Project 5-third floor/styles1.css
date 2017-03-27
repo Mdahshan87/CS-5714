@@ -1,0 +1,32 @@
+.graybox 
+{
+   background-color:#ddd;
+}
+h3
+{
+    color: white;
+    font-weight:800;
+    font-style: italic;
+    font-family: "Apple Chancery"
+}
+h5
+{
+    color: white;
+}
+.mdl-button.mdl-button--colored
+{
+    color:rgb(255,255,255)
+}
+td
+{
+     padding-left:5em
+}
+.mdl-button
+{
+   width:200px
+}
+ #welcome_btn
+{
+      
+    padding-left:38em
+}

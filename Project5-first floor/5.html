@@ -1,0 +1,278 @@
+<html>
+  <head>
+    <title>Google MDL Navigation Layout : Fixed header </title>
+    <!-- Material Design Lite -->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+   <link rel="stylesheet" 
+    href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-purple.min.css" /> 
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+ 
+  <body  background="bookstorelogo200.jpg">
+     <!-- MDL navigation container -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    
+    
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+
+      <!-- Spacer, to align items to right -->
+      
+  </nav>
+      <a class="mdl-navigation__link" href="1.html">VT Bookstore</a>
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-layout-spacer"></div>
+     
+       <div ><a href ="1.html" id = "Home" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-button--fab mdl-button--colored">
+        <i class="material-icons">home</i></a></div>
+         <div ><a href ="1.html" id = "Home" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-button--fab mdl-button--colored">
+        <i class="material-icons">help</i></a></div>
+  
+     
+      </nav>
+    </div>
+    <!-- Tabs -->
+         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Women</a>
+            <a href="#scroll-tab-2" class="mdl-layout__tab">Men</a>
+            <a href="#scroll-tab-3" class="mdl-layout__tab">Children</a> 
+            <a href="#scroll-tab-4" class="mdl-layout__tab">Accessories</a>      
+         </div>
+  </header>
+    
+    <!-- Drawer container -->
+  <div class="mdl-layout__drawer">
+  
+    <!-- navigation Container, with links -->
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Home Screen</a>
+      <a class="mdl-navigation__link" href="">Help</a>
+      <a class="mdl-navigation__link" href="">About us</a>
+   
+    </nav>
+  </div>
+    
+    
+  <main class="mdl-layout__content">
+ <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+            <div class="page-content"></div>
+            <table  id= "myTable" style="margin-top:10px; margin-left:0px;">  
+   <tbody>
+
+      
+        <tr>
+        
+        <td height="30" width="5%"> Sort<td>
+        <td height="30" width="10%"> <button id="name" OnClick="changeImage(this)" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Name</button></td>
+       <td height="30" width="10%"> <button  id="price" OnClick="changeImage(this)" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Price</button></td> 
+       <td height="30" width="75%"> <a href="5.html"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Default</a></td>
+    </tr>
+    <tr></tr>
+        <tr>
+        <td >
+        Brand
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="B1">
+         <input type="checkbox" id="B1"  onclick="OnChangeCheckbox (this)" class="mdl-checkbox__input" />
+        <span class="mdl-checkbox__label">Champion</span> <!-- Checkbox Label -->
+      </label>
+  
+    <!-- MDL Default State CheckBox 2--> 
+      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="B2">
+  <input type="checkbox"  onclick="OnChangeCheckbox (this)" id="B2" class="mdl-checkbox__input" />
+  <span class="mdl-checkbox__label">Columbia</span> <!-- Checkbox Label -->
+</label>
+<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="B3">
+         <input type="checkbox"  onclick="OnChangeCheckbox (this)" id="B3" class="mdl-checkbox__input" />
+        <span class="mdl-checkbox__label">Nike</span> <!-- Checkbox Label -->
+      </label>
+  
+    <!-- MDL Default State CheckBox 2--> 
+ <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="B4">
+  <input type="checkbox"   onclick="OnChangeCheckbox (this)" id="B4" class="mdl-checkbox__input" />
+  <span class="mdl-checkbox__label">JanSport</span> <!-- Checkbox Label -->
+</label>
+<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="B5">
+         <input type="checkbox"    onclick="OnChangeCheckbox (this)" id="B5" class="mdl-checkbox__input" />
+        <span class="mdl-checkbox__label">Gear</span> <!-- Checkbox Label -->
+      </label>
+  
+    <!-- MDL Default State CheckBox 2--> 
+ <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="B6">
+  <input type="checkbox"   onclick="OnChangeCheckbox (this)"  id="B6" class="mdl-checkbox__input" />
+  <span class="mdl-checkbox__label">Ralph_Lauren</span> <!-- Checkbox Label -->
+</label>
+  <!-- MDL Default State CheckBox 2--> 
+ <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="B7">
+  <input type="checkbox"   onclick="OnChangeCheckbox (this)" id="B7" class="mdl-checkbox__input" />
+  <span class="mdl-checkbox__label">Vantage</span> <!-- Checkbox Label -->
+</label>
+  <!-- MDL Default State CheckBox 2--> 
+ <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="B8">
+  <input type="checkbox"   onclick="OnChangeCheckbox (this)"  id="B8" class="mdl-checkbox__input" />
+  <span class="mdl-checkbox__label">47 Brand</span> <!-- Checkbox Label -->
+</label>
+Color
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="C1">
+         <input type="checkbox" id="C1"   onclick="OnChangeCheckbox (this)" class="mdl-checkbox__input" />
+        <span class="mdl-checkbox__label">White</span> <!-- Checkbox Label -->
+      </label>
+  
+    <!-- MDL Default State CheckBox 2--> 
+ <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="C2">
+  <input type="checkbox" id="C2"    onclick="OnChangeCheckbox (this)"  class="mdl-checkbox__input" />
+  <span class="mdl-checkbox__label">Red</span> <!-- Checkbox Label -->
+</label>
+<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="C3">
+         <input type="checkbox" id="C3"     class="mdl-checkbox__input" />
+        <span class="mdl-checkbox__label">Yellow</span> <!-- Checkbox Label -->
+      </label>
+  
+    <!-- MDL Default State CheckBox 2--> 
+ <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="C4">
+  <input type="checkbox" id="C4"   onclick="OnChangeCheckbox (this)" class="mdl-checkbox__input" />
+  <span class="mdl-checkbox__label">Orange</span> <!-- Checkbox Label -->
+</label>
+<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="C5">
+         <input type="checkbox" id="C5" class="mdl-checkbox__input" />
+        <span class="mdl-checkbox__label">Blue</span> <!-- Checkbox Label -->
+      </label>
+  
+    <!-- MDL Default State CheckBox 2--> 
+ <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="C6">
+  <input type="checkbox" id="C6" class="mdl-checkbox__input" />
+  <span class="mdl-checkbox__label">Purple</span> <!-- Checkbox Label -->
+</label>
+        </td>
+        <td  >  
+        <div><a href="8.html"><img src = "l1.png" id ="image" STYLE="position:absolute; TOP:170px; LEFT:130px; WIDTH:256px; HEIGHT:150px"></a></div>
+       <div><img src = "l2.png" id ="image1" STYLE="position:absolute; TOP:170px; LEFT:386px; WIDTH:256px; HEIGHT:150px"></div>
+        <div><img src = "l3.png" id ="image2" STYLE="position:absolute; TOP:170px; LEFT:642px; WIDTH:249px; HEIGHT:150px"></div>
+           
+     <div><img src = "l5.png" id ="image3" STYLE="position:absolute; TOP:310px; LEFT:130px; WIDTH:256px; HEIGHT:160px"></div>
+       <div><img src = "l6.png" id ="image4" STYLE="position:absolute; TOP:310px; LEFT:386px; WIDTH:256px; HEIGHT:160px"></div>
+        <div><img src = "l7.png" id ="image" STYLE="position:absolute; TOP:310px; LEFT:642px; WIDTH:249px; HEIGHT:160px"></div>
+          <div><img src = "l8.png" id ="image" STYLE="position:absolute; TOP:460px; LEFT:130px; WIDTH:256px; HEIGHT:160px"></div>
+       <div><img src = "l10.png" id ="image" STYLE="position:absolute; TOP:460px; LEFT:386px; WIDTH:256px; HEIGHT:160px"></div>
+        <div><img src = "l11.png" id ="image" STYLE="position:absolute; TOP:460px; LEFT:642px; WIDTH:249px; HEIGHT:160px"></div>
+   
+
+        </td>
+         </tr>
+		<tr></tr><tr></tr><tr></tr>
+      </tbody>
+   </table>
+ </section>
+  <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+            <div class="page-content"></div>
+            <table style="margin-top:100px; margin-left:450px;">  
+   <tbody>
+
+
+      
+        <tr>
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">T-Shirts</a></td>
+        <td></td><td></td><td></td> <td></td><td></td><td></td>
+        <td><a href="5.html" target="_blank"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Shorts & Pants</a></td>
+
+        </tr>
+        <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  
+        <tr>
+         <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Jerseys</a></td>
+         <td></td><td></td><td></td> <td></td><td></td><td></td>
+         <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Business Casual</a></td>
+      </tr>
+      <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  
+     
+       
+       <tr> 
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Outwear & Knits</a></td>
+        <td></td><td></td><td></td> <td></td><td></td><td></td>
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Sweatshirts</a></td>
+       </tr>
+            <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  
+		 <tr> 
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Caps</a></td>
+        <td></td><td></td><td></td> <td></td><td></td><td></td>
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Performance</a></td>
+       </tr>
+       
+      </tbody>
+   </table>
+   <br><br>  <br><br><br><br><br>
+ </section>
+         <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+            <div class="page-content"></div>
+            <table style="margin-top:130px; margin-left:500px;">  
+   <tbody>
+
+      
+        <tr>
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Infant & Toddler</a></td
+        </tr>
+        
+        <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr><tr>  </tr>  <tr>  </tr>  <tr>  </tr>
+        
+        <tr>
+         <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Youth</a></td>
+        </tr>
+      
+      <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr><tr>  </tr>  <tr>  </tr>  <tr>  </tr>
+     
+       
+       <tr> 
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Jerseys & Cheer sets</a></td>
+       </tr>
+       
+		
+      </tbody>
+   </table>
+    <br><br>  <br><br><br><br><br><br>
+         </section>
+         <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+            <div class="page-content"></div>
+            <table style="margin-top:130px; margin-left:450px;">  
+   <tbody>
+
+      
+        <tr>
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Ties & Belts</a></td>
+      
+        <td><a href="" target="_blank"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Bags & Backpacks</a></td>
+
+        </tr>
+        <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr><tr>  </tr>  <tr>  </tr>  <tr>  </tr>
+        <tr>
+         <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Hair  Accessories</a></td>
+
+         <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Footwear & Socks</a></td>
+      </tr>
+      <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr>  <tr>  </tr><tr>  </tr>  <tr>  </tr>  <tr>  </tr>
+     
+       
+       <tr> 
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Jewelry & Watches</a></td>
+
+        <td><a href=""  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Cold Weather Gear</a></td>
+       </tr>
+        
+		
+      </tbody>
+   </table>
+    <br><br>  <br><br><br><br><br><br>
+         </section>
+  <br><br><br><br><br>
+<div class="mdl-mega-footer__bottom-section">
+  <div><a href="4.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+<i class="material-icons">navigate_before</i>Back</a>
+</a> </div> 
+         
+               
+ </div>
+    
+  </main>
+    
+<script src="script.js"></script>
+</body>
+</html>

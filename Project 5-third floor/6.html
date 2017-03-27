@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Google MDL Navigation Layout : Fixed header </title>
+    <!-- Material Design Lite -->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+   <link rel="stylesheet" 
+    href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-purple.min.css" /> 
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    .mdl-button
+    {
+       width:200px
+    }
+    </style>
+  </head>
+
+  <body  background="bookstorelogo200.jpg">
+     <!-- MDL navigation container -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    
+    
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+
+      <!-- Spacer, to align items to right -->
+      
+   </nav>
+      <a class="mdl-navigation__link" href="1.html">VT Bookstore</a>
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-layout-spacer"></div>
+     
+       <div ><a href ="1.html" id = "Home" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-button--fab mdl-button--colored">
+        <i class="material-icons">home</i></a></div>
+         <div ><a href ="1.html" id = "Home" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-button--fab mdl-button--colored">
+        <i class="material-icons">help</i></a></div>
+  
+     
+      </nav>
+    </div>
+    <!-- Tabs -->
+        
+  </header>
+    
+    <!-- Drawer container -->
+  <div class="mdl-layout__drawer">
+  
+    <!-- navigation Container, with links -->
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Home Screen</a>
+      <a class="mdl-navigation__link" href="">Help</a>
+      <a class="mdl-navigation__link" href="">About us</a>
+   
+    </nav>
+  </div>
+    
+    
+  <main class="mdl-layout__content">
+
+            <div class="page-content"></div>
+            <table id="tableId" style="margin-top:130px; margin-left:50px;">  
+   <tbody>
+      <tr>
+      <td align="left">Modren Information Reterival</d>
+      </tr>
+      <tr>
+      <td> <img src = "content.jpeg" id ="image" STYLE="position:absolute; TOP:210px; LEFT:50px; WIDTH:250px; HEIGHT:220px"></td>
+      <td></td>  <td></td><td></td>  <td></td><td></td>  <td></td><td></td>  <td></td><td></td>  <td></td><td></td>  <td></td>
+      <td>
+      
+   <form>
+ 
+      <label class="mdl-selectfield__label" for="Quantity" id ="selector">Quantity</label>
+      <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label" id >
+        <select class="mdl-selectfield__select" id="quantity" name="quantity">
+          <option value=""></option>
+          <option value="option1">1</option>
+          <option value="option2">2</option>
+          <option value="option3">3</option>
+          <option value="option3">4</option>
+          <option value="option3">5</option>
+          <option value="option3">6</option>
+          <option value="option3">7</option>
+          <option value="option3">8</option>
+          <option value="option3">9</option>
+          <option value="option3">10</option>
+        </select>
+      </div>
+    </form>
+    <br>
+    <label class="mdl-selectfield__label" for="Size">Location: Third Floor <br> Aisle 7 <br> Third Shelf  <br> Price 44$ <br>  New <br></label><br>
+      <button onclick="buy()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">  Buy Now 
+       
+      </td>
+      <td  >
+      <br>  <br>   <br>  <br>  <br>   <br>  <br>  <br> <br>  <br> 
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+  <i class="material-icons">add_shopping_cart</i>Add to shopping cart
+</button>
+      
+      </td>
+       </tr>
+		
+      </tbody>
+   </table>
+ </section>
+    
+<br><br><br><br><br><br><br><br><br><br><br>
+<div class="mdl-mega-footer__bottom-section">
+  <div><a href="5.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+<i class="material-icons">navigate_before</i>Back</a>
+</a> </div> 
+         
+               
+ </div>
+    
+  </main>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
